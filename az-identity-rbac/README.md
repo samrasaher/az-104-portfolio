@@ -32,7 +32,7 @@ This lab covers **Manage Azure identities and governance** from the AZ-104 exam.
 
 ### 3. Group-Based License Assignment
 - Assigned Microsoft 365 E5 license to a security group
-- Verified license inheritance by group members
+- Configured group-based licensing and confirmed assignment at the group level
 
 ![License Assignment](screenshots/M365-E5-Licensed-Users.png)
 
@@ -48,7 +48,7 @@ This lab covers **Manage Azure identities and governance** from the AZ-104 exam.
 
 ### 5. Self-Service Password Reset (SSPR)
 - Enabled SSPR for selected users
-- Configured authentication methods
+- Configured Self-Service Password Reset (SSPR) policies and authentication methods
 
 ![SSPR Enabled](screenshots/sspr-enabled.png)
 
