@@ -1,53 +1,61 @@
-# Lab 01 - Microsoft Entra ID: Users, Groups & SSPR (AZ-104)
-## Goal
-Configure Microsoft Entra ID users, groups, group-based licensing, guest access, and Self-Service Password Reset (SSPR) following Azur best practices.
+# AZ-104 – Identity and Governance (Microsoft Entra ID)
+
+This lab covers **Manage Azure identities and governance** from the AZ-104 exam.
+
+## 🔹 Objectives
+- Create and manage Microsoft Entra users and groups
+- Assign licenses using group-based licensing
+- Configure Self-Service Password Reset (SSPR)
+- Manage external (guest) users
 
 ---
 
-## Concepts Covered
-- Microsoft Entra ID users (Member vs Guest)
-- Security Groups
-- Group-based licensing
-- External (guest) users
-- Self-Service Password Reset (SSPR)
+## 🔹 Lab Tasks Performed
+
+### 1. User Management
+- Created cloud users for lab testing
+- Verified user list in Microsoft Entra ID
+
+![Users List](screenshots/users-list.png)
 
 ---
 
-## Configuration Steps
+### 2. Group Management
+- Created security groups for AZ-104 labs
+- Added users to groups
 
-### 1. Created Users
-- Created two member users: 'labuser1', 'labuser2'
-- Verified user types and sign-in status
+![AZ-104 Users Group](screenshots/az104-users-group.png)
 
-### 2. Created Security Groups
-- 'az104-users'  (general access group)
-- 'az104-licensed-user' (license assignment group)
+![AZ-104 Licensed Users Group](screenshots/az104-licensed-users-group.png)
 
-### 3. Group-Based Licensing
-- Microsoft 365 E5 license assigned to 'az104-licensed-users'
-- Uesers inherit licenses automatically via group membership
-- usage location set before licensing
+---
 
-### 4. Guest Users
-- Invited external user 'guest-user-lab'
-- Verified user type as **Guest**
+### 3. Group-Based License Assignment
+- Assigned Microsoft 365 E5 license to a security group
+- Verified license inheritance by group members
+
+![License Assignment](screenshots/M365-E5-Licensed-Users.png)
+
+---
+
+### 4. External (Guest) User
+- Added a guest user to Microsoft Entra ID
+- Verified guest user type and properties
+
+![Guest User](screenshots/guest-user.png)
+
+---
 
 ### 5. Self-Service Password Reset (SSPR)
-- Enable SSPR for **Selected Users**
-- Target group: 'az104-users'
-- Configured authentication methods for password reset
+- Enabled SSPR for selected users
+- Configured authentication methods
+
+![SSPR Enabled](screenshots/sspr-enabled.png)
 
 ---
 
-## Screenshots
-Screenshots are available in the 'screenshots/' folder and include:
-- User list
-- Group membership
-- Group-based license assignment
-- Guest user details
-- SSPR configuration
-
----
-
-## Reflection
-This lab reinforced Microsoft best practices for identity management, including group-based access and licensing. These configurations improve secutity, scalability, and administrative efficiency and are directly relevant to AZ-104 exam scenarios and real-world Azure administration.
+## ✅ AZ-104 Skills Demonstrated
+- Microsoft Entra ID user and group management
+- Group-based licensing
+- External user access
+- Identity security configuration (SSPR)
