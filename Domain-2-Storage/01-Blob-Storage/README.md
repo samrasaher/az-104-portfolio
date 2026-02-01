@@ -1,90 +1,83 @@
-# Lab 1 – Azure Blob Storage (AZ-104)
+# AZ-104 – Blob Storage Lab
 
-This lab demonstrates how to create and manage Azure Blob Storage using the Azure Portal.
+This lab demonstrates how to implement and manage Azure Blob Storage using the Azure Portal, aligned with **Domain 2 – Implement and manage storage** of the AZ-104 exam.
 
 ---
 
-## 🎯 Lab Objectives
+## Objectives
 
-- Create a resource group for storage
-- Create a Storage Account (GPv2)
-- Configure redundancy and region
-- Create blob containers
-- Upload blobs
-- Create virtual directories
+- Create a storage account
+- Configure blob containers
+- Upload and manage blobs
+- Use virtual directories
 - Change blob access tiers
-- Verify private access behavior
+- Validate private access behavior
 
 ---
 
-## 🧪 Lab Tasks Performed
+## Step 1 – Create Resource Group
 
-### 1️⃣ Resource Group Creation
-- Created a dedicated resource group for storage labs.
+A dedicated resource group was created to isolate all storage resources used in this lab.
 
-### 2️⃣ Storage Account Creation
-- Created a General Purpose v2 (StorageV2) account.
-- Region: UK South
-- Performance: Standard
-- Redundancy: LRS
-
-### 3️⃣ Container Creation
-- Created private blob containers.
-- Verified anonymous access is disabled.
-
-### 4️⃣ Blob Upload
-- Uploaded image files as block blobs.
-
-### 5️⃣ Virtual Directory Structure
-- Created a logical folder structure inside the container.
-
-### 6️⃣ Blob Access Tier Management
-- Changed blob access tier from Hot to Cool.
-
-### 7️⃣ Access Verification
-- Attempted direct public URL access.
-- Verified private access restriction.
-
----
-
-## 📸 Screenshots
-
-### 1️⃣ Resource Group Created
 ![Resource Group](screenshots/01-resource-group.png)
 
 ---
 
-### 2️⃣ Storage Account Overview
+## Step 2 – Create Storage Account
+
+A General Purpose v2 (StorageV2) storage account was created with the following configuration:
+
+- Region: UK South  
+- Performance: Standard  
+- Replication: LRS  
+
 ![Storage Account Overview](screenshots/02-storage-account-overview.png)
 
 ---
 
-### 3️⃣ Private Blob Container Created
+## Step 3 – Create Private Blob Container
+
+A blob container was created with **private access level**, ensuring blobs are not accessible anonymously.
+
 ![Private Container](screenshots/03-container-private.png)
 
 ---
 
-### 4️⃣ Blobs Uploaded
+## Step 4 – Upload Blobs
+
+Sample image files were uploaded into the container to validate blob operations.
+
 ![Uploaded Blobs](screenshots/04-uploaded-blobs.png)
 
 ---
 
-### 5️⃣ Virtual Directory Created
+## Step 5 – Create Virtual Directory
+
+A virtual directory structure (`reports/`) was created to logically organize blobs within the container.
+
 ![Virtual Directory](screenshots/05-virtual-directory.png)
 
 ---
 
-### 6️⃣ Blob Access Tier Changed
-![Access Tier](screenshots/06-blob-access-tier.png)
+## Step 6 – Change Blob Access Tier
+
+The blob access tier was modified from **Hot** to **Cool** to demonstrate cost-optimization capabilities.
+
+![Blob Access Tier](screenshots/06-blob-access-tier.png)
 
 ---
 
-### 7️⃣ Private Access Test (Expected Failure)
+## Step 7 – Validate Private Access
+
+Direct public access to the blob URL was tested and correctly failed with a **ResourceNotFound** error, confirming private access behavior.
+
 ![Private Access Test](screenshots/07-private-access-test.png)
 
-
 ---
 
-## ✅ Result
+## Result
 
-Successfully configured Azure Blob Storage with private access and validated storage behavior according to AZ-104 exam requirements.
+- Azure Blob Storage successfully configured
+- Private access enforced
+- Data organization and tiering validated
+- Storage concepts aligned with AZ-104 exam objectives
