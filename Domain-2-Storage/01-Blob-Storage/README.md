@@ -49,15 +49,39 @@ This lab demonstrates how to create and manage Azure Blob Storage using the Azur
 
 ## 📸 Screenshots
 
-| Step | Description |
-|------|-------------|
-| 01 | Resource group created |
-| 02 | Storage account overview |
-| 03 | Private container created |
-| 04 | Blobs uploaded |
-| 05 | Virtual directory created |
-| 06 | Blob access tier changed |
-| 07 | Private access test (ResourceNotFound) |
+### 1️⃣ Resource Group Created
+![Resource Group](screenshots/01-resource-group.png)
+
+---
+
+### 2️⃣ Storage Account Overview
+![Storage Account Overview](screenshots/02-storage-account-overview.png)
+
+---
+
+### 3️⃣ Private Blob Container Created
+![Private Container](screenshots/03-container-private.png)
+
+---
+
+### 4️⃣ Blobs Uploaded
+![Uploaded Blobs](screenshots/04-uploaded-blobs.png)
+
+---
+
+### 5️⃣ Virtual Directory Created
+![Virtual Directory](screenshots/05-virtual-directory.png)
+
+---
+
+### 6️⃣ Blob Access Tier Changed
+![Access Tier](screenshots/06-blob-access-tier.png)
+
+---
+
+### 7️⃣ Private Access Test (Expected Failure)
+![Private Access Test](screenshots/07-private-access-test.png)
+
 
 ---
 
